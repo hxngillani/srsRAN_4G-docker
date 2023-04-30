@@ -10,6 +10,7 @@ separate containers. The air interface is emulated via [ZeroMQ](https://github.c
 To easily set this all up, use the provided shell script:
 
 ```bash
+chmod +x start.sh
 ./start.sh
 ```
 
