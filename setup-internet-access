@@ -14,6 +14,7 @@ docker exec -i -t virtual-srsepc ping -c 4 172.16.0.2
 
 
 echo
+read -s -p "Press ENTER to continue, or CTRL + C to exit"
 echo
 echo "**** UE currently connecting via virtualised Docker network. ****"
 echo "**** Re-routing UE connection through the EPC... ****"
@@ -31,7 +32,7 @@ echo
 echo "**** Testing external connection to the internet from the UE... ****"
 echo
 
-docker exec -i -t virtual-srsue ping -c 4 1.1.1.1
+docker exec -i -t virtual-srsue ping -c 4 8.8.8.8
 
 
 echo
