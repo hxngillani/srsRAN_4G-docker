@@ -26,7 +26,7 @@ RUN apt-get update \
 WORKDIR /srsran
 
 # Pinned git commit used for this example
-ARG COMMIT=00c972ac4962edf7ffd462188ddb89ceb6444a58
+ARG COMMIT=5275f33360f1b3f1ee8d1c4d9ae951ac7c4ecd4e
 
 # Clone and checkout commit
 RUN git clone https://github.com/srsran/srsRAN srsRAN-${COMMIT}
