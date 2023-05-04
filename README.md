@@ -4,15 +4,34 @@ This is a minimal example of an end-to-end [srsRAN](https://github.com/srsran/sr
 The core network, base station and user device all run in
 separate containers. The air interface is emulated via [ZeroMQ](https://github.com/zeromq/libzmq).
 
+## Prerequisite
+Please see instructions file to install prerequisite
 
-## Script
+## Script Auto configuration
 
 To easily set this all up, use the provided shell script:
 
+- Start the containers with the following command make sure you in into the srsRAN_4G-docker dirtectory 
+
 ```bash
-chmod +x start.sh
 ./start.sh
 ```
+- to install taceroute and speed test into your srsUE container use:
+
+```bash
+./setup--cli.sh
+```
+
+- to configure internet access via corenetwrok use :
+
+```bash
+./setup-internet-access.sh
+```
+**Note:** some time you might need to give permissions in that case please use  
+```bash
+chmod +x start.sh setup--cli.sh start.sh
+```
+
 
 ## Manual configuration
 
